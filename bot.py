@@ -166,11 +166,10 @@ method_choice = random.choice(methods)
 key_choice = random.choices(string.ascii_lowercase, k = 1024)
 
 encode_text = encrypt(text = post_text, method = method_choice, key = key_choice)
-encode_spoiler = encrypt(text = spoiler, method = method_choice, key = key_choice)
 
 try:
     post = mastodon.status_post(status = encode_text,
-                                spoiler_text = encode_spoiler)
+                                spoiler_text = spoiler)
 except Exception as e:
     print(f"Exception: {e}")
 
