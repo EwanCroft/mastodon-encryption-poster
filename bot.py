@@ -109,7 +109,7 @@ def create_key_matrix(key):
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 if not os.path.exists(rf'{ROOT_DIR}\config.ini'):
-    url = input("Enter the URL of your Mastodon instance:\n")
+    url = input("Enter the full URL (i.e. https://mastodon.social) of your Mastodon instance:\n")
     email = input("Enter your email address:\n")
     password = input("Enter your password:\n")
     
