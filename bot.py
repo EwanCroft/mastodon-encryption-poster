@@ -5,6 +5,7 @@ import random
 import string
 import base64
 
+# ChatGPT assisted me with the function below
 def encrypt(text, method, key):
     if method == "A1Z26":
         result = ""
@@ -93,6 +94,7 @@ def encrypt(text, method, key):
     else:
         return text
 
+# ChatGPT assisted me with the function below
 def create_key_matrix(key):
     key = key.upper().replace("J", "I")
     matrix = []
